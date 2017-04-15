@@ -13,10 +13,8 @@
     </head>
     <body>
         <%@include file="includes/header.jsp"%>
-        
         <h1>Amortização Americana</h1>
         <!--conteudo-->
-        
         <%@include file="includes/footer.jsp"%>
     </body>
 </html>
