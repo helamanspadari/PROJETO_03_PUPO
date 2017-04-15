@@ -1,0 +1,40 @@
+.btn {
+  background: #1039e0;
+  background-image: -webkit-linear-gradient(top, #1039e0, #2bb3b8);
+  background-image: -moz-linear-gradient(top, #1039e0, #2bb3b8);
+  background-image: -ms-linear-gradient(top, #1039e0, #2bb3b8);
+  background-image: -o-linear-gradient(top, #1039e0, #2bb3b8);
+  background-image: linear-gradient(to bottom, #1039e0, #2bb3b8);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #e7f5f0;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #42d934);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #42d934);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #42d934);
+  background-image: -o-linear-gradient(top, #3cb0fd, #42d934);
+  background-image: linear-gradient(to bottom, #3cb0fd, #42d934);
+  text-decoration: none;
+}
+#topo{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin-bottom: -8px;
+    padding-top: 20px;
+    float: top;
+    background: #CDCDC1;
+}
+#titulo{
+    font-size: 45px;
+    font-family: arial;
+    color: #1039e0;
+}
