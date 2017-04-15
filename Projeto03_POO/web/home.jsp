@@ -15,7 +15,7 @@
     <body>
         <%@include file="includes/header.jsp"%>
         
-        <div id="meio" style="text-align: center;">
+        <div id="meio">
             <h1>Grupo 08 - Trabalho de POO</h1>
             <hr>		
             <h2>Objetivo</h2>
