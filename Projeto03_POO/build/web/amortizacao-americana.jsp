@@ -12,11 +12,11 @@
         <title>P03 - Amortização Americana</title>
     </head>
     <body>
-        <%@include file="includes/header.jsp"%>
-        
-        <h1>Amortização Americana</h1>
-        <!--conteudo-->
-        
-        <%@include file="includes/footer.jsp"%>
+        <%@include file="WEB-INF/header.jspf"%>
+        <div id="meioAmericana">
+            <h2>Amortização Americana</h2>
+            <!--conteudo-->
+        </div>
+        <%@include file="WEB-INF/footer.jspf"%>
     </body>
 </html>

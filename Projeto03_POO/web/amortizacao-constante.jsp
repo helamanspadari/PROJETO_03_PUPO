@@ -9,12 +9,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>P03 - Amortização Constante</title>
+        <title>Projeto 03 - POO  - JSP</title>
     </head>
     <body>
-        <%@include file="includes/header.jsp"%>
-        <h1>Amortização Constante</h1>
-        <!--conteudo-->
-        <%@include file="includes/footer.jsp"%>
+        <%@include file="WEB-INF/header.jspf"%>
+        <div>
+            <h2>Amortização Constante</h2>
+            <!--conteudo-->
+        </div>
+        <%@include file="WEB-INF/footer.jspf"%>
     </body>
 </html>

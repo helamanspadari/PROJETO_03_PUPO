@@ -12,11 +12,11 @@
         <title>P03 - Tabela Price</title>
     </head>
     <body>
-        <%@include file="includes/header.jsp"%>
+        <%@include file="WEB-INF/header.jspf"%>
         
-        <h1>Tabela Price</h1>
+        <h2>Tabela Price</h2>
         <!--conteudo-->
         
-        <%@include file="includes/footer.jsp"%>
+        <%@include file="WEB-INF/footer.jspf"%>
     </body>
 </html>
