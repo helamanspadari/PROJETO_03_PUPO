@@ -35,8 +35,9 @@
             catch(Exception e){}
                 
                float amorti = n / p;
-               float juros = 1;
-               float par = n;
+               
+               float juros = 0;
+               float par = n + juros;
                
 
             
@@ -57,21 +58,21 @@
             
         </form>
         <hr/>
-        <table border="1" class="tabela">
-            <th>Periodos</th>
+        <table border="1">
+            <th>Parcelas</th>
             <th>Juros</th>
             <th>Total da parcela</th>
             <th>Valor amortizado</th>
             <%for(i=1; i<=p; i++){%>
             
             <tr>
-                <td> <%=i%></td>
+                <td><%=i%></td>
                 
-                <td><%=(juros = n * j / 100) %></td>
+                <td>R$ <%= String.format("%.2f", juros = n * j / 100) %></td>
                 
-                <td><%=(par+juros)%></td>
+                <td>R$ <%=String.format("%.2f", par+juros)%></td>
                 
-                <td> <%=(n = n-amorti)%></td>
+                <td>R$ <%=String.format("%.2f", n = n-amorti)%></td>
                 
                 
                   
