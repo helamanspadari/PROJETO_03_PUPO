@@ -13,10 +13,10 @@
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
-        
-        <h2>Tabela Price</h2>
-        <!--conteudo-->
-        
+        <div id="meioTabela">
+            <h2>Tabela Price</h2>
+            <!--conteudo-->
+        </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>
 </html>
