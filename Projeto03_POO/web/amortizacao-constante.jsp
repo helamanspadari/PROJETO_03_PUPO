@@ -16,10 +16,10 @@
         <div id="meioConstante">
             <h2>Amortização Constante</h2>
      <%
-            int j = 1;
+            float j = 1;
             
             int p = 1;
-            int n = 1;
+            float n = 1;
             int i = 1;
             
            
@@ -27,16 +27,16 @@
           
             
             
-            try{n = Integer.parseInt(request.getParameter("n"));}
+            try{n = Float.parseFloat(request.getParameter("n"));}
             catch(Exception e){}
              try{p = Integer.parseInt(request.getParameter("p"));}
             catch(Exception e){}
-              try{j = Integer.parseInt(request.getParameter("j"));}
+              try{j = Float.parseFloat(request.getParameter("j"));}
             catch(Exception e){}
                 
-               int amorti = n / p;
-               int juros = 1;
-               int par = n;
+               float amorti = n / p;
+               float juros = 1;
+               float par = n;
 
             
             
