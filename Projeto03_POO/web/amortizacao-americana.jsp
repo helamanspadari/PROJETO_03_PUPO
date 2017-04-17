@@ -10,14 +10,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>P03 - Amortização Americana</title>
-        <style>
-            form#esquerda{
-                
-            }
-            table#direita{
-                
-            }
-        </style>
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
