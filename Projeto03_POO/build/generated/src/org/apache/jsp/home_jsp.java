@@ -13,8 +13,8 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   static {
     _jspx_dependants = new java.util.ArrayList<String>(2);
-    _jspx_dependants.add("/includes/header.jsp");
-    _jspx_dependants.add("/includes/footer.jsp");
+    _jspx_dependants.add("/WEB-INF/header.jspf");
+    _jspx_dependants.add("/WEB-INF/footer.jspf");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -55,43 +55,50 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>Projeto 03 - POO  - JSP</title>\n");
-      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/meiocss.css\">\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        ");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/headercss.css\">\n");
-      out.write("<div id=\"topo\">\n");
-      out.write("    <nav>\n");
-      out.write("        <b><p id=\"titulo\">POO_03</p></b>\n");
-      out.write("        <span><a href=\"home.jsp\" class=\"btn\">Home</a></span>\n");
-      out.write("        <span><a href=\"amortizacao-constante.jsp\" class=\"btn\">Amortização Constante</a></span>\n");
-      out.write("        <span><a href=\"amortizacao-americana.jsp\" class=\"btn\">Amortização Americana</a></span>\n");
-      out.write("        <span><a href=\"tabela-price.jsp\" class=\"btn\">Tabela Price</a></span>\n");
-      out.write("    </nav>\n");
-      out.write("</div>\n");
-      out.write("<hr/>");
       out.write("\n");
-      out.write("        <div id=\"meio\" style=\"text-align: center;\">\n");
-      out.write("            <h1>Grupo 08 - Trabalho de POO</h1>\n");
+      out.write("\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/main.css\">\n");
+      out.write("    <nav>\n");
+      out.write("        <h1>POO_03</h1>\n");
+      out.write("        <ul>\n");
+      out.write("            <li><a href=\"home.jsp\" class=\"btn\">Home</a></li>\n");
+      out.write("            <li><a href=\"amortizacao-constante.jsp\" class=\"btn\">Amortização Constante</a></li>\n");
+      out.write("            <li><a href=\"amortizacao-americana.jsp\" class=\"btn\">Amortização Americana</a></li>\n");
+      out.write("            <li><a href=\"tabela-price.jsp\" class=\"btn\">Tabela Price</a></li>\t\t\t\n");
+      out.write("\t</ul>\n");
+      out.write("    </nav>\n");
+      out.write("<hr/>\n");
+      out.write("\n");
+      out.write("        \n");
+      out.write("        <div id=\"meiohome\" style=\"text-align: center;\">\n");
+      out.write("            <h2>Grupo 08 - Trabalho de POO</h2>\n");
       out.write("            <hr>\t\t\n");
       out.write("            <h2>Objetivo</h2>\n");
       out.write("            <p>Site criado com o instuito de calcular amortizações e tabela-price</p>\n");
       out.write("            <hr>\n");
       out.write("            <h2>Integrantes do Grupo</h2>\n");
-      out.write("            <p>Andre Tripode</p>\n");
-      out.write("            <p>Felipe Reis</p>\n");
-      out.write("            <p>Helaman Spadari</p>\n");
-      out.write("            <p>Thiago Bonini</p>\n");
+      out.write("            <ul>\n");
+      out.write("                <li>Andre Tripode</li>\n");
+      out.write("                <li>Felipe Reis</li>\n");
+      out.write("                <li>Helaman Spadari</li>\n");
+      out.write("                <li>Thiago Bonini</li>\n");
+      out.write("            </ul>\n");
       out.write("\t</div>\n");
+      out.write("        \n");
       out.write("        ");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/footercss.css\">\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/main.css\">\n");
       out.write("<div id=\"rodape\" style=\"text-align: center\">\n");
       out.write("\t<hr>\n");
       out.write("    <h3>Projeto 03 - POO - ADS - Noturno</h3>\n");
-      out.write("</div>");
+      out.write("</div>\n");
       out.write("\n");
       out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

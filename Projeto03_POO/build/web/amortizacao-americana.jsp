@@ -15,7 +15,7 @@
         <%@include file="WEB-INF/header.jspf"%>
         <div id="meioAmericana">
             <h2>Amortização Americana</h2>
-            <!--conteudo-->
+            <%--código aqui--%>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>
