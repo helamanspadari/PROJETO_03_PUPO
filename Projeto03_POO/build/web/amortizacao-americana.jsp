@@ -14,7 +14,7 @@
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
-        <div id="meioAmericana">
+        <div id="meioAmericana" class="formatação">
             <h2>Amortização Americana</h2>
             <%
             float parcela = 0;
@@ -34,42 +34,44 @@
             float cap = capital; 
             %>
             <form id="esquerda"> 
-                <label for="C">Capital</label><br>
+                <label for="C"><b>Capital</b></label><br>
                 <input type="text" name="C" id="C">
                 <br>
-                <label for="m">Meses</label><br>
+                <label for="m"><b>Meses</b></label><br>
                 <input type="text" name="m" id="m">
                 <br>
-                <label for="j">Juros</label><br>
+                <label for="j"><b>Juros</b></label><br>
                 <input type="text" name="j" id="j">
                 
                 <br><br>
-                <input type="submit" value="Calcular">
+                <input type="submit" value="Gerar Amortização">
             </form>
+            <hr>
             <br>
-            <table border="1" id="direita">
+            <table border="1" id="direita" class="tabela">
                 <th>Parcelas</th>
                     <th>Amortização</th>
                     <th>Valor dos Juros</th>
                     <th>Valor da Prestação</th>
                     <th>Saldo Devedor</th>
                     
-                <%for(int i=0; i<=meses; i++){
+                <%for(int i = 1; i <= meses; i++){
+                    
                     if(i == meses){
                         parcela = capital + juros;
                         cap = capital;
-                        capital = 0;                      
+                        capital = 0;
                     }
                     if( i != meses){
                         cap = 0;
-                    }
+                    }                   
                 %>                
                 <tr>
                     <td><%=i%></td>
-                    <td>R$ <%=String.format("%.2f", cap)%></td>
-                    <td>R$ <%=String.format("%.2f", juros)%></td>
-                    <td>R$ <%=String.format("%.2f", parcela)%></td>
-                    <td>R$ <%=String.format("%.2f", capital)%></td>
+                    <td><%=String.format("R$ %.2f", cap)%></td>
+                    <td><%=String.format("R$ %.2f", juros)%></td>
+                    <td><%=String.format("R$ %.2f", parcela)%></td>
+                    <td><%=String.format("R$ %.2f", capital)%></td>
                 </tr>
                 <%}%>
             </table>

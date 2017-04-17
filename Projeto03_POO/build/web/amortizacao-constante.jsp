@@ -48,18 +48,18 @@
         %>
         <form>
             <br/> <b>Valor total:</b><br/>    
-            <input type="number" name="n" value="<%=n%>"/>
+            <input type="number" name="n" />
           
             <br/> <b>Toal de periodos:</b><br/>        
-            <input type="number" name="p" value="<%=p%>"/>
+            <input type="number" name="p" />
             
             <br/> <b>Valor dos juros:</b><br/>
-            <input type="number" name="j" value="<%=j%>"/><br/>
+            <input type="number" name="j" /><br/>
             <b>Amortização fixa:<br/> </b><%=amorti%><br/>
-            <input type="submit" class="espaço" value="Gerar Amortização"/>
+            <input type="submit" value="Gerar Amortização"/>
             
         </form>
-        <hr/>
+            <hr>
         <table border="1" class="tabela">
             <th>Parcelas</th>
             <th>Juros</th>
