@@ -10,6 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>P03 - Amortização Americana</title>
+        <style>
+            form#esquerda{
+                
+            }
+            table#direita{
+                
+            }
+        </style>
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
@@ -62,14 +70,13 @@
                     if( i != meses){
                         cap = 0;
                     }
-                %>
-                
+                %>                
                 <tr>
                     <td><%=i%></td>
-                    <td>R$ <%=cap%></td>
-                    <td>R$ <%=juros%></td>
-                    <td>R$ <%=parcela%></td>
-                    <td>R$ <%=capital%></td>
+                    <td>R$ <%=String.format("%.2f", cap)%></td>
+                    <td>R$ <%=String.format("%.2f", juros)%></td>
+                    <td>R$ <%=String.format("%.2f", parcela)%></td>
+                    <td>R$ <%=String.format("%.2f", capital)%></td>
                 </tr>
                 <%}%>
             </table>
