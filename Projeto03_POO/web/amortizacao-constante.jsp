@@ -24,9 +24,6 @@
             float n = 0;
             int i = 0;
             
-           
-            
-          
             
             
             try{n = Float.parseFloat(request.getParameter("n"));}
@@ -43,9 +40,7 @@
                
 
             
-            
-
-        %>
+     %>
         <form>
             <br/> <b>Valor total:</b><br/>    
             <input type="number" name="n" />
