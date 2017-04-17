@@ -53,22 +53,23 @@
                     <th>Valor da Prestação</th>
                     <th>Saldo Devedor</th>
                     
-                <%for(int i=0; i<=meses; i++){
+                <%for(int i = 1; i <= meses; i++){
+                    
                     if(i == meses){
                         parcela = capital + juros;
                         cap = capital;
-                        capital = 0;                      
+                        capital = 0;
                     }
                     if( i != meses){
                         cap = 0;
-                    }
+                    }                   
                 %>                
                 <tr>
                     <td><%=i%></td>
-                    <td>R$ <%=String.format("%.2f", cap)%></td>
-                    <td>R$ <%=String.format("%.2f", juros)%></td>
-                    <td>R$ <%=String.format("%.2f", parcela)%></td>
-                    <td>R$ <%=String.format("%.2f", capital)%></td>
+                    <td><%=String.format("R$ %.2f", cap)%></td>
+                    <td><%=String.format("R$ %.2f", juros)%></td>
+                    <td><%=String.format("R$ %.2f", parcela)%></td>
+                    <td><%=String.format("R$ %.2f", capital)%></td>
                 </tr>
                 <%}%>
             </table>
