@@ -75,13 +75,24 @@ ul>li{
     float: top;
     padding-top: 10px;
     
-    .tabela{
-        padding-bottom: 25px;
-        padding-bottom: 25px;
-        padding-left: 50px;
-    }
-    .espaço{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+    
+}
+
+.tabela{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-style: none;
+    
+    
+}
+
+
+    
+
+
+.formatação{
+    padding-left: 25px;
+    
+    
 }

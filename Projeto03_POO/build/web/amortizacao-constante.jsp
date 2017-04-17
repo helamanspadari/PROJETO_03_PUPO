@@ -5,15 +5,17 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <title>Projeto 03 - POO  - JSP</title>
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
-        <div id="meioConstante">
+        <div id="meioConstante" class="formatação">
             <h2>Amortização Constante</h2>
      <%
             float j = 0;
@@ -35,8 +37,9 @@
             catch(Exception e){}
                 
                float amorti = n / p;
-               float juros = 1;
-               float par = n;
+               
+               float juros = 0;
+               float par = n + juros;
                
 
             
@@ -58,20 +61,20 @@
         </form>
         <hr/>
         <table border="1" class="tabela">
-            <th>Periodos</th>
+            <th>Parcelas</th>
             <th>Juros</th>
             <th>Total da parcela</th>
             <th>Valor amortizado</th>
             <%for(i=1; i<=p; i++){%>
             
             <tr>
-                <td> <%=i%></td>
+                <td><%=i%></td>
                 
-                <td><%=(juros = n * j / 100) %></td>
+                <td>R$ <%= String.format("%.2f", juros = n * j / 100) %></td>
                 
-                <td><%=(par+juros)%></td>
+                <td>R$ <%=String.format("%.2f", par+juros)%></td>
                 
-                <td> <%=(n = n-amorti)%></td>
+                <td>R$ <%=String.format("%.2f", n = n-amorti)%></td>
                 
                 
                   

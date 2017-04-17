@@ -5,15 +5,17 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <title>Projeto 03 - POO  - JSP</title>
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
-        <div id="meioConstante">
+        <div id="meioConstante" class="formatação">
             <h2>Amortização Constante</h2>
      <%
             float j = 0;
@@ -58,7 +60,7 @@
             
         </form>
         <hr/>
-        <table border="1">
+        <table border="1" class="tabela">
             <th>Parcelas</th>
             <th>Juros</th>
             <th>Total da parcela</th>

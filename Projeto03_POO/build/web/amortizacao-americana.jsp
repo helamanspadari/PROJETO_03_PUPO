@@ -5,19 +5,12 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>P03 - Amortização Americana</title>
-        <style>
-            form#esquerda{
-                
-            }
-            table#direita{
-                
-            }
-        </style>
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
@@ -42,13 +35,13 @@
             %>
             <form id="esquerda"> 
                 <label for="C">Capital</label><br>
-                <input type="text" name="C">
+                <input type="text" name="C" id="C">
                 <br>
                 <label for="m">Meses</label><br>
-                <input type="text" name="m">
+                <input type="text" name="m" id="m">
                 <br>
                 <label for="j">Juros</label><br>
-                <input type="text" name="j">
+                <input type="text" name="j" id="j">
                 
                 <br><br>
                 <input type="submit" value="Calcular">
