@@ -30,10 +30,9 @@
 
             juros = capital * (juros/100);
             parcela = juros;
-            
-
+            float cap = capital; 
             %>
-            <form> 
+            <form id="esquerda"> 
                 <label for="C">Capital</label><br>
                 <input type="text" name="C">
                 <br>
@@ -47,7 +46,7 @@
                 <input type="submit" value="Calcular">
             </form>
             <br>
-            <table border="1">
+            <table border="1" id="direita">
                 <th>Parcelas</th>
                     <th>Amortização</th>
                     <th>Valor dos Juros</th>
@@ -55,14 +54,22 @@
                     <th>Saldo Devedor</th>
                     
                 <%for(int i=0; i<=meses; i++){
+                    if(i == meses){
+                        parcela = capital + juros;
+                        cap = capital;
+                        capital = 0;                      
+                    }
+                    if( i != meses){
+                        cap = 0;
+                    }
                 %>
                 
                 <tr>
                     <td><%=i%></td>
-                    <td><%=capital%></td>
-                    <td><%=juros%></td>
-                    <td><%=parcela%></td>
-                    <td><%=capital%></td>
+                    <td>R$ <%=cap%></td>
+                    <td>R$ <%=juros%></td>
+                    <td>R$ <%=parcela%></td>
+                    <td>R$ <%=capital%></td>
                 </tr>
                 <%}%>
             </table>
