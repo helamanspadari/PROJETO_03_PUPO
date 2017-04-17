@@ -13,7 +13,7 @@
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
-        <div>
+        <div id="meioConstante">
             <h2>Amortização Constante</h2>
             <!--conteudo-->
         </div>
