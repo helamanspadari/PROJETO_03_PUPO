@@ -16,11 +16,11 @@
         <div id="meioConstante">
             <h2>Amortização Constante</h2>
      <%
-            float j = 1;
+            float j = 0;
             
-            int p = 1;
-            float n = 1;
-            int i = 1;
+            int p = 0;
+            float n = 0;
+            int i = 0;
             
            
             
@@ -37,24 +37,31 @@
                float amorti = n / p;
                float juros = 1;
                float par = n;
+               
 
             
             
 
         %>
         <form>
-           <br/> Valor total:    
+            <br/> <b>Valor total:</b><br/>    
             <input type="number" name="n" value="<%=n%>"/>
           
-              <br/> Toal de periodos:
+            <br/> <b>Toal de periodos:</b><br/>        
             <input type="number" name="p" value="<%=p%>"/>
             
-              <br/> Valor dos juros:
+            <br/> <b>Valor dos juros:</b><br/>
             <input type="number" name="j" value="<%=j%>"/><br/>
-            <input type="submit" value="Gerar Amortização"/>
+            <b>Amortização fixa:<br/> </b><%=amorti%><br/>
+            <input type="submit" class="espaço" value="Gerar Amortização"/>
+            
         </form>
         <hr/>
-        <table border = "1">
+        <table border="1" class="tabela">
+            <th>Periodos</th>
+            <th>Juros</th>
+            <th>Total da parcela</th>
+            <th>Valor amortizado</th>
             <%for(i=1; i<=p; i++){%>
             
             <tr>
@@ -66,11 +73,12 @@
                 
                 <td> <%=(n = n-amorti)%></td>
                 
-                <td><%=amorti%></td>
+                
                   
             
             </tr>
             <%}%>
+        </table>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>

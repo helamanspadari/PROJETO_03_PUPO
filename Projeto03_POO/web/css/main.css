@@ -73,4 +73,15 @@ ul>li{
     background: #CDCDC1;
     color: #1039e0;
     float: top;
+    padding-top: 10px;
+    
+    .tabela{
+        padding-bottom: 25px;
+        padding-bottom: 25px;
+        padding-left: 50px;
+    }
+    .espaço{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
