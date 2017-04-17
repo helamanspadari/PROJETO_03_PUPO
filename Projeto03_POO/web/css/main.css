@@ -1,5 +1,8 @@
 body{
     margin: 0px;
+    background: #CDCDC1;
+    text-align: center;
+    color: #1039e0;
 }
 nav ul>li{
     list-style: none;
@@ -47,11 +50,9 @@ h1{
 }
 
 #meiohome{
-    color: #1039e0;
     float: top;
     margin-top: -8px;
     padding-top: 10px;
-    background: #CDCDC1;
 }
 ul{
     padding:0px;
@@ -74,7 +75,6 @@ ul>li{
     float: top;
     padding-top: 10px;   
 }
-
 .tabela{
     text-align: center;
     padding-bottom: 10px;
@@ -83,7 +83,6 @@ ul>li{
     
     
 }
-
 .formatação{
     padding-left: 25px;
 }
