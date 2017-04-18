@@ -4,6 +4,8 @@ body{
     text-align: center;
     color: #1039e0;
     font-family: 'Verdana';
+    position: relative;
+    padding-bottom: 80px;
 }
 nav ul>li{
     list-style: none;
@@ -70,21 +72,24 @@ ul>li{
     height: 60px;
     text-align: center;
     float: top;
-    padding-top: 10px;   
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: inherit;
 }
 .tabela{
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
     border-style: none;
-    margin-left: 25.8%;
+    margin-left: 29.3%;
 }
 .tabela1{
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
     border-style: none;
-    margin-left: 33.8%;
+    margin-left: 31.5%;
 }
 .formatação{
     padding-left: 25px;

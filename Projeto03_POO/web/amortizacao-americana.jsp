@@ -48,7 +48,7 @@
                 <br><br>
             </form>
             <hr>
-            
+            <%if(capital > 0 && meses>0 && juros>0){%>
             <table border="1" class="tabela">
                     <th>Parcelas</th>
                     <th>Amortização</th>
@@ -75,7 +75,7 @@
                     <td><%=String.format("R$ %.2f", capital)%></td>
                 </tr>
                 <%}%>
-            </table>
+            </table><%}%>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>

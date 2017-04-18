@@ -48,9 +48,10 @@
                 
                 <br><br>
                 <input type="submit" value="Gerar Amortização" class="btn">
+                <br/><br/>
             </form>
             <hr>
-            
+            <%if(capital > 0 && meses>0 && taxa>0){%>
             <table border="1" class="tabela">
                 <th>Parcelas</th>
                     <th>Saldo Devedor</th>
@@ -58,11 +59,11 @@
                     <th>Valor dos Juros</th>
                     <th>Amortização</th>
                     
-                <%for(int i = 0; i <= meses; i++){
+                <%for(int i = 1; i <= meses; i++){
                     
                     double juros = 0;
                     
-                    if(i == 0){
+                    if(i == 1){
                         devedor = capital;
                         prestacao = 0;
                         juros = 0;
@@ -83,7 +84,7 @@
                     <td><%=String.format("R$ %.2f", amorti)%></td>
                 </tr>
                 <%}%>
-            </table>
+            </table><%}%>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>

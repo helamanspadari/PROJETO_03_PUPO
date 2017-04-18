@@ -11,7 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <title>Projeto 03 - POO  - JSP</title>
+        <title>P03 - Amortização Constante</title>
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
@@ -54,6 +54,7 @@
         </form>
             <br/>
             <hr>
+          <%if(n > 0 && p>0 && j>0){%>
         <table border="2" class="tabela1">
             <th> Parcelas </th>
             <th> Juros </th>
@@ -72,13 +73,10 @@
                 <td>R$ <%=String.format("%.2f", n = n-amorti)%></td>
                 
                 <td>R$ <%=String.format("%.2f", amorti)%></td>
-                
-                
-                  
-            
+              
             </tr>
             <%}%>
-        </table>
+        </table><%}%>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>

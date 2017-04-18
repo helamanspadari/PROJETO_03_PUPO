@@ -33,7 +33,7 @@
             parcela = juros;
             float cap = capital; 
             %>
-            <form id="esquerda"> 
+            <form> 
                 <label for="C"><b>Capital</b></label><br>
                 <input type="text" name="C" id="C">
                 <br>
@@ -48,8 +48,8 @@
                 <br><br>
             </form>
             <hr>
-            
-            <table border="1" id="direita" class="tabela">
+            <%if(capital > 0 && meses>0 && juros>0){%>
+            <table border="1" class="tabela">
                     <th>Parcelas</th>
                     <th>Amortização</th>
                     <th>Valor dos Juros</th>
@@ -75,7 +75,7 @@
                     <td><%=String.format("R$ %.2f", capital)%></td>
                 </tr>
                 <%}%>
-            </table>
+            </table><%}%>
         </div>
         <%@include file="WEB-INF/footer.jspf"%>
     </body>
