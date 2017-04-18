@@ -1,5 +1,9 @@
 body{
     margin: 0px;
+    background: #CDCDC1;
+    text-align: center;
+    color: #1039e0;
+    font-family: 'Verdana';
 }
 nav ul>li{
     list-style: none;
@@ -42,16 +46,13 @@ nav{
 }
 h1{
     font-size: 45px;
-    font-family: arial;
     color: #1039e0;
 }
 
 #meiohome{
-    color: #1039e0;
     float: top;
     margin-top: -8px;
     padding-top: 10px;
-    background: #CDCDC1;
 }
 ul{
     padding:0px;
@@ -64,35 +65,27 @@ ul>li{
     list-style:none;
     padding-bottom: 20px;
 }
-
 #rodape{
     width: 100%;
     height: 60px;
     text-align: center;
-    font-family: arial;
-    background: #CDCDC1;
-    color: #1039e0;
     float: top;
-    padding-top: 10px;
-    
-    
+    padding-top: 10px;   
 }
-
 .tabela{
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
     border-style: none;
-    
-    
+    margin-left: 25.8%;
 }
-
-
-    
-
-
+.tabela1{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-style: none;
+    margin-left: 33.8%;
+}
 .formatação{
     padding-left: 25px;
-    
-    
 }

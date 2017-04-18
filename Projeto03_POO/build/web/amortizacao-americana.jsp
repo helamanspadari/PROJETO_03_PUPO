@@ -14,7 +14,7 @@
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
-        <div id="meioAmericana" class="formatação">
+        <div class="formatação">
             <h2>Amortização Americana</h2>
             <%
             float parcela = 0;
@@ -44,12 +44,13 @@
                 <input type="text" name="j" id="j">
                 
                 <br><br>
-                <input type="submit" value="Gerar Amortização">
+                <input class="btn" type="submit" value="Gerar Amortização">
+                <br><br>
             </form>
             <hr>
-            <br>
+            
             <table border="1" id="direita" class="tabela">
-                <th>Parcelas</th>
+                    <th>Parcelas</th>
                     <th>Amortização</th>
                     <th>Valor dos Juros</th>
                     <th>Valor da Prestação</th>

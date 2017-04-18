@@ -2,7 +2,7 @@
 <%@ page pageEncoding="UTF-8" %>
 <link rel="stylesheet" type="text/css" href="css/main.css">
     <nav>
-        <h1>POO_03</h1>
+        <h1>CONTABIL POO_03</h1>
         <ul>
             <li><a href="home.jsp" class="btn">Home</a></li>
             <li><a href="amortizacao-constante.jsp" class="btn">Amortização Constante</a></li>
