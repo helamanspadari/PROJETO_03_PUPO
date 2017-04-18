@@ -33,7 +33,7 @@
             parcela = juros;
             float cap = capital; 
             %>
-            <form id="esquerda"> 
+            <form> 
                 <label for="C"><b>Capital</b></label><br>
                 <input type="text" name="C" id="C">
                 <br>
@@ -49,7 +49,7 @@
             </form>
             <hr>
             
-            <table border="1" id="direita" class="tabela">
+            <table border="1" class="tabela">
                     <th>Parcelas</th>
                     <th>Amortização</th>
                     <th>Valor dos Juros</th>
