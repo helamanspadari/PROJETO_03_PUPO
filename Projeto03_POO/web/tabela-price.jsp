@@ -13,7 +13,7 @@
     </head>
     <body>
         <%@include file="WEB-INF/header.jspf"%>
-        <div id="meioAmericana">
+        <div id="formatação">
             <h2>Sistema Francês de Amortização (Tabela Price)</h2>
             <%
             double capital = 0;
@@ -37,20 +37,20 @@
                                     
             %>
             <form id="esquerda"> 
-                <label for="C">Capital</label><br>
+                <label for="C"><b>Capital</b></label><br>
                 <input type="text" name="C" id="C">
                 <br>
-                <label for="m">Meses</label><br>
+                <label for="m"><b>Meses</b></label><br>
                 <input type="text" name="m" id="m">
                 <br>
-                <label for="j">Juros</label><br>
+                <label for="j"><b>Juros</b></label><br>
                 <input type="text" name="j" id="j">
                 
                 <br><br>
-                <input type="submit" value="Calcular">
+                <input type="submit" value="Calcular" class="btn">
             </form>
             <br>
-            <table border="1" id="direita">
+            <table border="1" id="direita" class="tabela">
                 <th>Parcelas</th>
                     <th>Saldo Devedor</th>
                     <th>Valor da Prestação</th>
