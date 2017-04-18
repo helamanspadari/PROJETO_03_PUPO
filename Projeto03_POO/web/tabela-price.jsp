@@ -36,7 +36,7 @@
             double linha2 = 1-(1/x);
                                     
             %>
-            <form id="esquerda"> 
+            <form> 
                 <label for="C"><b>Capital</b></label><br>
                 <input type="text" name="C" id="C">
                 <br>
@@ -47,10 +47,11 @@
                 <input type="text" name="j" id="j">
                 
                 <br><br>
-                <input type="submit" value="Calcular" class="btn">
+                <input type="submit" value="Gerar Amortização" class="btn">
             </form>
-            <br>
-            <table border="1" id="direita" class="tabela">
+            <hr>
+            
+            <table border="1" class="tabela">
                 <th>Parcelas</th>
                     <th>Saldo Devedor</th>
                     <th>Valor da Prestação</th>
