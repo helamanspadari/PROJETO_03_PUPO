@@ -59,6 +59,7 @@
             <th> Juros </th>
             <th> Total da parcela </th>
             <th> Valor amortizado </th>
+            <th>Amortização </th>
             <%for(i=1; i<=p; i++){%>
             
             <tr>
@@ -69,6 +70,8 @@
                 <td>R$ <%=String.format("%.2f", par+juros)%></td>
                 
                 <td>R$ <%=String.format("%.2f", n = n-amorti)%></td>
+                
+                <td>R$ <%=String.format("%.2f", amorti)%></td>
                 
                 
                   

@@ -22,7 +22,7 @@
             <hr>
             <h2>Integrantes do Grupo</h2>
             <ul>
-                <li>Andre Tripode</li>
+                <li>Andre Tripode Colognesi</li>
                 <li>Felipe Reis</li>
                 <li>Helaman Spadari</li>
                 <li>Thiago Bonini</li>
